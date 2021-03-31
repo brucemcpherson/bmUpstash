@@ -6,14 +6,21 @@ class Gql {
   }
 
   execute (command, ...vargs) {
-    const payload = this['redis'+command](...vargs)
-    console.log(payload)
+    const cmd = 'redis'+command
+    const payload = this[cmd](...vargs)
+ 
     const result = this.fetcher (this.url, {
       method:'POST',
       contentType: "application/json",
       payload: JSON.stringify(payload)
     })
-    return result
+    if (!result.success) {
+      throw new Error(result.content)
+    }
+    else {
+      return result.data && result.data.data && result.data.data[cmd]
+    }
+    
   }
 
   redisGet (key) {
@@ -29,7 +36,7 @@ class Gql {
   
   redisSetEX (key, value, seconds) {
     return {
-      query: `mutation($key: String!,$value:String!,seconds:Int!) {
+      query: `mutation($key: String!,$value:String!,$seconds:Int!) {
         redisSetEX(key:$key, value:$value,seconds:$seconds)
       }`,
       variables: {
