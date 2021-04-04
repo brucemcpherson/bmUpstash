@@ -1,5 +1,5 @@
 # Google Apps Script Project: bmUpstash
-This repo (bmUpstash) was automatically updated on 4/2/2021, 12:11:34 PM by GasGit
+This repo (bmUpstash) was automatically updated on 4/4/2021, 11:06:08 AM by GasGit
 
 For more information on gasgit, see the [desktop liberation site](https://ramblings.mcpher.com/drive-sdk-and-github/migrategasgit/ "desktop liberation")
 
@@ -20,14 +20,9 @@ Gql| server_js
 Fetcher| server_js
 Utils| server_js
 ### Directly referenced libraries
-*library*|*identifier*|*key*|*version*|*dev mode*|*source*|
---- | --- | --- | --- | --- | --- 
-bmCrusher| bmCrusher|1nbx8f-kt1rw53qbwn4SO2nKaw9hLYl5OI3xeBgkBC7bpEdWKIPBDkVG0|6|no|[here](libraries/bmCrusher "library source")
+no libraries discovered
 ### All dependencies and sub dependencies
-*library*|*identifier*|*key*|*version*|*dev mode*|*source*|
---- | --- | --- | --- | --- | --- 
-bmCrusher| bmCrusher|1nbx8f-kt1rw53qbwn4SO2nKaw9hLYl5OI3xeBgkBC7bpEdWKIPBDkVG0|6|no|[here](libraries/bmCrusher "library source")
-bmUpstash| bmUpstash|1GBZYWotLe5-pVord4fe5DCl6pwGz1BiDjAqA0AE812_qy6XTWmWeZNX-|5|no|[here](libraries/bmUpstash "library source")
+no libraries discovered
 ### Enabled Google Services
 no libraries discovered
 ### Scopes required
